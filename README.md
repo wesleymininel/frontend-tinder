@@ -26,7 +26,6 @@ Certifique-se de que o Docker está instalado em seu sistema.
    ```sh
    sudo docker build -t frontend-tinder .
    ```
-   Este comando cria uma imagem Docker chamada tinder-style baseada no Dockerfile fornecido.
 
 4. **Execute o contêiner**:
    ```sh
