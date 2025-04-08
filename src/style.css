@@ -1,0 +1,177 @@
+/* Resetando margens, paddings e definindo box-sizing para border-box em todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background: #f7f7f7; /* Cor de fundo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altura total da viewport */
+  margin: 0;
+}
+
+/* Estilização do título principal do projeto */
+.project-title {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Container principal que organiza o layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Estilização do card de perfil */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra ao redor do card */
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+/* Estilização da imagem dentro do card */
+.card img {
+  width: 100%;
+  border-radius: 50%; /* Torna a imagem circular */
+}
+
+/* Estilização do título dentro do card */
+.card h2 {
+  margin: 10px 0 5px;
+}
+
+/* Container para os botões de like e dislike */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Estilização base para os botões */
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s; /* Transição suave para efeitos */
+}
+
+/* Estilização específica para o botão de like */
+.btn.like {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+/* Estilização específica para o botão de dislike */
+.btn.dislike {
+  background-color: #dc3545; /* Vermelho */
+  color: white;
+}
+
+/* Estilização da seção de histórico */
+.historico {
+  width: 65%;
+}
+
+/* Estilização da tabela dentro do histórico */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ao redor da tabela */
+}
+
+/* Estilização do cabeçalho da tabela */
+.styled-table thead {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+}
+
+/* Estilização das células da tabela */
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilização das linhas pares da tabela */
+.styled-table tr:nth-child(even) {
+  background-color: #f3f3f3; /* Cinza claro */
+}
+
+/* Estilização das imagens dentro da tabela */
+.styled-table img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilização dos botões dentro da tabela */
+.styled-table button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #e74c3c; /* Vermelho */
+  transition: transform 0.2s; /* Efeito de escala ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+.styled-table button:hover {
+  transform: scale(1.2); /* Aumenta ligeiramente o tamanho */
+}
+
+/* Estilização do ícone de like */
+.like-icon {
+  color: green;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilização do ícone de dislike */
+.dislike-icon {
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilizações responsivas para telas menores */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .historico {
+    width: 100%;
+  }
+
+  .historico {
+    margin-top: 20px;
+  }
+}
+
+/* Estilização do título dentro do card */
+.card-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+

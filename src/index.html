@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tinder Style</title>
+  <!-- Link para o arquivo de estilos CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Título principal do projeto -->
+  <h1 class="project-title">Tinder Style</h1>
+
+  <!-- Contêiner principal que engloba o cartão de perfil e o histórico -->
+  <div class="container">
+
+    <!-- Cartão de perfil que exibe as informações do usuário -->
+    <div class="card" id="profile-card">
+      <!-- Imagem do perfil -->
+      <img src="" alt="Foto" id="picture">
+      <!-- Nome do usuário -->
+      <h2 id="name">Nome</h2>
+      <!-- Informações adicionais do usuário -->
+      <p><strong>Idade:</strong> <span id="age"></span></p>
+      <p><strong>Gênero:</strong> <span id="gender"></span></p>
+      <p><strong>Estado:</strong> <span id="state"></span></p>
+      <!-- Botões para interagir com o perfil (curtir ou não curtir) -->
+      <div class="buttons">
+        <button class="btn dislike" onclick="handleChoice('No')">👎</button>
+        <button class="btn like" onclick="handleChoice('Yes')">👍</button>
+      </div>
+    </div>
+
+    <!-- Seção do histórico que exibe a tabela de interações anteriores -->
+    <div class="historico">
+      <table id="tabela-historico" class="styled-table">
+        <thead>
+          <tr>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Gênero</th>
+            <th>Estado</th>
+            <th>Like</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-historico-body">
+          <!-- As linhas do histórico serão inseridas aqui dinamicamente -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Inclusão do arquivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
