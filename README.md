@@ -1,8 +1,8 @@
-# Projeto: Tinder Style - Frontend
+# Projeto: MVP FrontEnd - Arquitetura de Software - Pós-Graduação em Engenharia de Software - PUC-RIO.
 
 Este projeto consiste em uma aplicação frontend desenvolvida para simular a experiência de matching inspirado no Tinder com perfis gerados automaticamente por meio da API pública RandomUser.me, o que garante uma variedade de dados fictícios com nacionalidade brasileira.
 
-Trata-se de um MVP construído como parte das atividades da disciplina de Arquitetura de Software, no curso de Pós-Graduação em Engenharia de Software.
+Trata-se de um MVP construído como parte das atividades da disciplina de Arquitetura de Software, no curso de Pós-Graduação em Engenharia de Software da PUC-RIO.
 
 A cada interação (👍 ou 👎), o perfil visualizado é enviado para uma API Backend (https://github.com/wesleymininel/backend-tinder/), que registra e persiste o histórico dessas ações em um banco de dados SQLite.
 
